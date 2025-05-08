@@ -155,8 +155,9 @@ body {
 
   .floorball-hero-description,
   .text p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
+    padding: 0 1rem 0 1rem;
   }
 
   .floorball-hero {
@@ -166,6 +167,10 @@ body {
   .text-card {
     flex-direction: column;
     text-align: center;
+  }
+
+  .text-boxes {
+    padding: 1rem;
   }
 
   .text,
@@ -208,14 +213,6 @@ body {
 @media (max-width: 770px) and (max-height: 400px) {
   .floorball-card-container {
     margin-top: 0;
-  }
-
-  .initial-text {
-    font-size: 1rem;
-  }
-
-  .initial-text p {
-    font-size: 0.8rem;
   }
 }
 

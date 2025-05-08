@@ -216,12 +216,17 @@ body {
 
   .travel-hero-description,
   .text p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
+    padding: 0 1rem 0 1rem;
   }
 
   .travel-hero {
     margin-top: -10rem;
+  }
+
+  .text-boxes {
+    padding: 1rem;
   }
 
   .text-card {

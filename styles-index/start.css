@@ -168,7 +168,8 @@
 
   .intro-section p, 
   .hobbies-section-text p {
-    font-size: 18px;
+    font-size: 15px;
+    padding: 0 1.5rem 0 1.5rem;
   }
 
 }

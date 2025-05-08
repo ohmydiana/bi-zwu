@@ -1,0 +1,44 @@
+.nav-list a.active {
+  text-decoration: underline;
+}
+
+.work-hero {
+  background-image: url(../pics/work/intitial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 45em;
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  background-color: black;
+}
+
+.work-hero-description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.work-hero-description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 60rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .dance-hero-description {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  
+}
+

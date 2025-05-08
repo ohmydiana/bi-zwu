@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.nav-list a.active {
+  text-decoration: underline;
+}
+
+.who-am-i-textbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  padding: 10rem 0 0 2rem;
+}
+
+.who-am-i-intro h1 {
+  color: #FFEA00;
+  margin-bottom: 3rem;
+  margin-top: -6rem;
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+}
+
+.who-am-i-intro {
+  flex: 1 1 60%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-right: 2rem;
+}
+
+.who-am-i-intro p {
+  margin-top: 1rem;
+}
+
+.who-am-i-photo {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-am-i-photo {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* .who-am-i-photo img {
+  width: 25rem;
+  height: auto;
+  object-fit: contain;
+  box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.2);
+  padding-top: 8rem;
+} */
+
+.who-am-i-img {
+  width: 25rem;
+  margin: 0 0 1rem 2rem; /* odstupy: hore, vpravo, dole, vlavo */
+  object-fit: contain;
+  box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-title {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.education-title h2 {
+  color: #FFEA00;
+  font-size: 3rem;
+}
+
+.education-title p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .who-am-i-intro h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .who-am-i-img {
+    width: 18rem;
+    margin: 0 0 1rem 0;
+    float: none;
+  }
+
+  .who-am-i-intro p {
+    font-size: 16px;
+  }
+
+  /* .who-am-i-textbox {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5rem 0;
+  } */
+
+  .who-am-i-intro {
+    text-align: center;
+  }
+
+  .education-title h2 {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+}

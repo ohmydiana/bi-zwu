@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.breadcrumb {
+  color: white;
+  font-size: 14px;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.breadcrumb span {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dance-hero {
+  background-image: url(../pics/dance/dianka-dance.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 45em;
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  background-color: black;
+}
+
+.dance-hero-description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.dance-hero-description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 60rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.dance-card-container-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  padding: 1rem;
+  scroll-padding-left: 1.5rem;
+  scroll-padding-right: 1.5rem;
+}
+
+.dance-card-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 18%;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 1rem;
+}
+
+.dance-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  background-color: #eee;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dance-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.text-boxes {
+  display: flex;
+  flex-direction: column;
+  max-width: 1900px;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.text-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1 1 300px;
+  color: white;
+}
+
+.text p {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0 2rem 0 2rem;
+  margin-top: 20px;
+}
+
+.text-photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+
+  .dance-hero-description,
+  .text p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .dance-hero {
+    margin-top: -10rem;
+  }
+
+  .breadcrumb {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .text-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text,
+  .text-photo {
+    flex: 1 1 100%;
+  }
+
+  .text-photo img {
+    margin-top: 1rem;
+    width: 250px;
+    height: auto;
+  }
+
+  .dance-card-container {
+    grid-auto-columns: 45%;
+  }
+
+  /* Custom scrollbar styling for WebKit browsers */
+  .dance-card-container-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .dance-card-container-wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+
+  .dance-card-container-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 0, 0.5);
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dance-card-container {
+    grid-auto-columns: 45%;
+  }
+}
+
+@media (max-width: 770px) and (max-height: 400px) {
+  .dance-card-container {
+    margin-top: 0;
+  }
+}
+

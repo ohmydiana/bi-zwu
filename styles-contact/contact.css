@@ -1,4 +1,4 @@
-.nav-list a.active {
+.nav-list .active {
   text-decoration: underline;
 }
 
@@ -52,6 +52,8 @@
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
+  font-family: "Slackey", sans-serif;
+  font-style: normal;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }

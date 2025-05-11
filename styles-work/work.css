@@ -1,9 +1,9 @@
-.nav-list a.active {
+.nav-list .active {
   text-decoration: underline;
 }
 
 .work-hero {
-  background-image: url(../pics/work/intitial.jpg);
+  background-image: url(../pics/work/work-hero-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -34,11 +34,10 @@
 
 @media screen and (max-width: 768px) {
   
-  .dance-hero-description {
+  .work-hero-description {
     font-size: 17px;
     line-height: 25px;
   }
-
   
 }
 

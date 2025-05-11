@@ -216,9 +216,13 @@ body {
 
   .travel-hero-description,
   .text p {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 25px;
     padding: 0 1rem 0 1rem;
+  }
+
+  .text p {
+    margin-top: 8px;
   }
 
   .travel-hero {

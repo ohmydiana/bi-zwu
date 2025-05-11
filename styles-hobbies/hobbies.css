@@ -1,6 +1,6 @@
 
 
-.nav-list a.active {
+.nav-list .active {
   text-decoration: underline;
 }
 
@@ -34,7 +34,7 @@
   flex-direction: column;
   max-width: 1400px;
   padding: 2rem;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0 auto;
 }
 
@@ -102,13 +102,13 @@
   }
 
   .hobbies-hero-description p {
-    font-size: 18px;
+    font-size: 0.95rem;
     color: #fff;
     line-height: 25px;
   }
 
   .hobby-text p {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 25px;
     padding: 0 1rem 0 1rem;
   }

@@ -3,7 +3,7 @@
 }
 
 .work-hero {
-  background-image: url(../pics/work/hero-work.JPEG);
+  background-image: url(../pics/work/work-hero.JPEG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -33,6 +33,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .work-hero {
+    margin-top: -15rem;
+  }
   
   .work-hero-description {
     font-size: 17px;

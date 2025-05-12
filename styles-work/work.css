@@ -35,7 +35,8 @@
 @media screen and (max-width: 768px) {
 
   .work-hero {
-    margin-top: -15rem;
+    height: 60vh;
+    min-height: 20em;
   }
   
   .work-hero-description {

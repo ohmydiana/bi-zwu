@@ -32,6 +32,10 @@
   line-height: 2rem;
 }
 
+.work-hero-description p {
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
 
   .work-hero {

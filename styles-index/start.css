@@ -22,11 +22,21 @@
   color: #FFEA00;
 }
 
-.hello {
+.hello, 
+.hero p {
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 3vw;
+}
+
+.hero p {
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.8rem;
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .first-name {
@@ -41,7 +51,8 @@
 }
 
 .intro-section, 
-.hobbies-section-text {
+.hobbies-section-text,
+.work-section {
   color: white;
   display: flex;
   flex-direction: column;
@@ -52,7 +63,8 @@
 }
 
 .intro-section h2,
-.hobbies-section-text h2 {
+.hobbies-section-text h2,
+.work-section h2 {
   font-family: "Slackey", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -61,10 +73,15 @@
 }
 
 .intro-section p, 
-.hobbies-section-text p {
+.hobbies-section-text p,
+.work-section p {
   margin-top: 1rem;
   padding: 0 5rem 0 5rem;
   font-size: 1.3rem;
+}
+
+.work-section {
+  margin-bottom: 3rem;
 }
 
 .hobbies-section-text {
@@ -83,7 +100,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .card {
@@ -109,9 +126,10 @@
 }
 
 .about-me-btn, 
-.see-more-btn {
+.see-more-btn, 
+.work-section-btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 0.5rem 1rem;
   background-color: white;
   color: black;
@@ -145,6 +163,10 @@
     font-size: 4vw;
   }
 
+  .hero p {
+    font-size: 3.5vw;
+  }
+
   .whole-name {
     flex-direction: column;
     align-items: center;
@@ -161,13 +183,15 @@
   }
 
   .intro-section h2,
-  .hobbies-section-text h2 {
+  .hobbies-section-text h2,
+  .work-section h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
 
   .intro-section p, 
-  .hobbies-section-text p {
+  .hobbies-section-text p,
+  .work-section p {
     font-size: 1rem;
     padding: 0 1.5rem 0 1.5rem;
   }

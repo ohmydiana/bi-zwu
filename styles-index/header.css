@@ -15,11 +15,11 @@
   width: 100%;
   padding: 0 1rem;
   position: relative;
-  height: 50px;
+  height: 3rem;
 }
 
 .logo img {
-  height: 40px;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -38,7 +38,7 @@
 .nav-list li span {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 1rem;
   display: block;
   font-weight: 500;
 }
@@ -50,7 +50,7 @@
 }
 
 .menu-icon img {
-  width: 30px;
+  width: 1.8rem;
   height: auto;
 }
 
@@ -76,12 +76,12 @@
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     display: none;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     z-index: 1000;
   }
 
   .nav-list li {
-    margin: 10px 0;
+    margin: 0.5rem 0;
   }
 
   #menu-toggle:checked ~ .nav-list {

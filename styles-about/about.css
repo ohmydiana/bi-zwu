@@ -99,6 +99,7 @@ body {
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.1rem;
   line-height: 1.5;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -114,7 +115,7 @@ body {
   }
 
   .who-am-i-intro p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .who-am-i-intro {
@@ -128,7 +129,7 @@ body {
   }
 
   .education-title p {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0 1.5rem 0 1.5rem;
   }
   

@@ -28,8 +28,8 @@
   max-width: 60rem;
   border-radius: 1rem;
   padding: 1.5rem;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -40,8 +40,8 @@
   }
   
   .work-hero-description {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
   
 }

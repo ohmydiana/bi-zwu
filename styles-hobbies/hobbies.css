@@ -19,20 +19,20 @@
 .hobbies-hero-description {
   text-align: center;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 .hobbies-hero-description p {
-  font-size: 23px;
+  font-size: 1.3rem;
   color: #fff;
-  line-height: 35px;
+  line-height: 2rem;
 }
 
 .hobbies-list {
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: 87rem;
   padding: 2rem;
   gap: 2rem;
   margin: 0 auto;
@@ -59,8 +59,8 @@
 }
 
 .hobby-text p {
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .hobby-icon {
@@ -71,7 +71,7 @@
 }
 
 .hobby-icon img {
-  width: 250px;
+  width: 15rem;
   height: auto;
   object-fit: contain;
   border-radius: 1rem;
@@ -102,14 +102,13 @@
   }
 
   .hobbies-hero-description p {
-    font-size: 0.95rem;
-    color: #fff;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
   .hobby-text p {
-    font-size: 0.95rem;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.4rem;
     padding: 0 1rem 0 1rem;
   }
 

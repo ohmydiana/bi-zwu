@@ -1,7 +1,7 @@
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 4rem auto;
 }
 
@@ -45,7 +45,6 @@
 }
 
 .text-box {
-  /* padding: 20px 30px; */
   padding: 2rem 2rem;
   background: #fff;
   position: relative;
@@ -66,24 +65,24 @@
   height: 0;
   width: 0;
   position: absolute;
-  top: 28px;
+  top: 1.75rem;
   z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid white;
-  right: -15px;
+  border-top: 0.95rem solid transparent;
+  border-bottom: 0.95rem solid transparent;
+  border-left: 0.95rem solid white;
+  right: -0.95rem;
 }
 
 .right-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
-  top: 28px;
+  top: 1.75rem;
   z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid white;
-  left: -15px;
+  border-top: 0.95rem solid transparent;
+  border-bottom: 0.95rem solid transparent;
+  border-right: 0.95rem solid white;
+  left: -0.95rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,11 +102,11 @@
 
   .right-container img {
     left: auto;
-    right: -20px;
+    right: -1.25rem;
   }
 
   .timeline::after {
-    left: 31px;
+    left: 2rem;
   }
 
   .left-container-arrow,
@@ -121,7 +120,7 @@
   }
 
   .text-box {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .hero-description p {

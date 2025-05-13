@@ -11,7 +11,7 @@ body {
 
 .breadcrumb {
   color: white;
-  font-size: 14px;
+  font-size: 0.9rem;
   padding: 1rem 2rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -56,8 +56,8 @@ body {
   max-width: 60rem;
   border-radius: 1rem;
   padding: 1.5rem;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .gallery-title {
@@ -71,9 +71,9 @@ body {
 }
 
 .gallery-title img {
-  width: 25px;
+  width: 1.4rem;
   height: auto;
-  margin-left: 20px;
+  margin-left: 1.2rem;
 }
 
 .travel-card-container-wrapper {
@@ -119,7 +119,7 @@ body {
 .text-boxes {
   display: flex;
   flex-direction: column;
-  max-width: 1900px;
+  max-width: 118rem;
   padding: 2rem;
   gap: 1.5rem;
   margin: 0 auto;
@@ -148,15 +148,15 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 1 1 300px;
+  flex: 1 1 18rem;
   color: white;
 }
 
 .text p {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.3rem;
+  line-height: 2rem;
   padding: 0 2rem 0 2rem;
-  margin-top: 20px;
+  margin-top: 0.8rem;
 }
 
 .see-gallery-btn {
@@ -182,7 +182,7 @@ body {
 }
 
 .text-photo img {
-  width: 300px;
+  width: 20rem;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -216,8 +216,8 @@ body {
 
   .travel-hero-description,
   .text p {
-    font-size: 0.95rem;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     padding: 0 1rem 0 1rem;
   }
 
@@ -245,7 +245,7 @@ body {
 
   .text-photo img {
     margin-top: 1rem;
-    width: 250px;
+    width: 16rem;
     height: auto;
   }
 
@@ -253,7 +253,7 @@ body {
     grid-auto-columns: 45%;
   }
 
-  /* Custom scrollbar styling for WebKit browsers */
+  /* webkit */
   .travel-card-container-wrapper::-webkit-scrollbar {
     height: 6px;
   }

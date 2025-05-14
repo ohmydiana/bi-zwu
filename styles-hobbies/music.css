@@ -144,15 +144,15 @@ body {
     z-index: 10;
   }
 
-  .music-hero {
-    margin-top: -10rem;
-  }
-
   .music-hero-description,
   .text p {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
     padding: 0 1rem 0 1rem;
+  }
+
+  .music-hero {
+    margin-top: -10rem;
   }
 
   .text-card {
@@ -173,21 +173,10 @@ body {
     font-size: 1.6rem;
   }
 
-  .text-photo img {
+  .text-photo img,
+  .text-photo video {
     margin-top: 1rem;
+    width: 16rem;
     height: auto;
   }
 }
-
-@media (max-height: 750px) {
-  .card-container {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 770px) and (max-height: 400px) {
-  .card-container {
-    margin-top: 0;
-  }
-}
-

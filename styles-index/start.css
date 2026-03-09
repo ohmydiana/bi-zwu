@@ -144,7 +144,8 @@
 }
 
 .about-me-btn:hover, 
-.see-more-btn:hover {
+.see-more-btn:hover,
+.work-section-btn:hover {
   background-color: #e0dbdb;
 }
 

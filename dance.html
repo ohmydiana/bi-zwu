@@ -11,7 +11,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackey&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles-hobbies/dance.css">
     <link rel="stylesheet" href="./styles-index/general.css">
@@ -57,7 +57,10 @@
       <span>dance</span>
     </nav>
 
-    <div class="dance-hero"></div>
+    <section class="dance-hero">
+      <h1 class="dance-hero-title">DANCE</h1>
+      <img class="dance-hero-subject" src="./pics/dance/dance-subject.png" alt="Two dancers in traditional clothing">
+    </section>
 
     <div class="dance-hero-description-wrapper">
       <div class="dance-hero-description">
@@ -69,10 +72,6 @@
         </p>
       </div>
     </div>
-    
-
-    </div>
-
     <div class="text-boxes">
 
       
@@ -117,38 +116,45 @@
     <div class="dance-card-container-wrapper">
       <div class="dance-card-container">
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-1.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-1.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-2.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-2.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-3.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-3.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-4.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-4.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-5.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-5.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-6.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-6.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-7.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-7.webp" alt="Dance photo">
-        </div>
+        </button>
 
-        <div class="dance-card">
+        <button class="dance-card lightbox-trigger" type="button" data-lightbox-src="./pics/dance/dance-card-8.webp" data-lightbox-alt="Dance photo">
           <img src="./pics/dance/dance-card-8.webp" alt="Dance photo">
-        </div>
+        </button>
 
+      </div>
+    </div>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+      <div class="lightbox-content">
+        <img class="lightbox-image" src="" alt="">
       </div>
     </div>
 
@@ -192,8 +198,10 @@
     </div>
 
     <div class="footer-note">
-      <p>&copy; 2025 Diana Sichanhova. All rights reserved.</p>
+      <p>&copy; 2026 Diana Sichanhova. All rights reserved.</p>
     </div>
+
+    <script src="./js/lightbox.js"></script>
 
   </body>
 </html>

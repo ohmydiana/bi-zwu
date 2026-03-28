@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+body.lightbox-open {
+  overflow: hidden;
+}
+
 .breadcrumb {
   color: white;
   font-size: 0.9rem;
@@ -31,15 +35,53 @@ body {
 }
 
 .dance-hero {
-  background-image: url(../pics/dance/dance-hero.PNG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  min-height: 45em;
   position: relative;
-  overflow: hidden;
+  min-height: 35em;
   height: 70vh;
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, #474747 0%, #2f2f2f 32%, #171717 62%, #050505 100%);
+}
+
+.dance-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.08) 28%, rgba(0, 0, 0, 0.08) 72%, rgba(0, 0, 0, 0.95) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.08) 22%, rgba(0, 0, 0, 0.08) 78%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+}
+
+.dance-hero-title {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 100rem);
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(5rem, 30vw, 28rem);
+  line-height: 0.9;
+  letter-spacing: 0.6rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.dance-hero-subject {
+  position: absolute;
+  left: 50%;
+  bottom: -2.5rem;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: min(33vw, 28rem);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .dance-hero-description-wrapper {
@@ -80,6 +122,8 @@ body {
 }
 
 .dance-card {
+  appearance: none;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,13 +134,68 @@ body {
   border-radius: 1rem;
   padding: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: zoom-in;
 }
 
 .dance-card img {
+  display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 0.5rem;
+}
+
+.dance-card:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 0.2rem;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.86);
+  z-index: 1000;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: min(92vw, 90rem);
+  max-height: 88vh;
+}
+
+.lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: 88vh;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.45);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .text-boxes {
@@ -160,6 +259,18 @@ body {
 
   .dance-hero {
     margin-top: -10rem;
+    padding: 0 1.5rem;
+  }
+
+  .dance-hero-title {
+    width: 100%;
+    font-size: clamp(4.8rem, 38vw, 9rem);
+    letter-spacing: 0.1rem;
+  }
+
+  .dance-hero-subject {
+    width: min(50vw, 15rem);
+    bottom: 3rem;
   }
 
   .breadcrumb {
@@ -196,6 +307,15 @@ body {
     grid-auto-columns: 45%;
   }
 
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox-close {
+    top: 1rem;
+    right: 1rem;
+  }
+
   /* webkit */
   .dance-card-container-wrapper::-webkit-scrollbar {
     height: 6px;
@@ -223,4 +343,3 @@ body {
     margin-top: 0;
   }
 }
-

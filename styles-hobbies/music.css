@@ -74,7 +74,7 @@ body {
   bottom: 1rem;
   transform: translateX(-50%);
   z-index: 2;
-  width: min(20vw, 20rem);
+  width: min(18vw, 20rem);
   height: auto;
   object-fit: contain;
   pointer-events: none;

@@ -12,6 +12,59 @@ body {
   text-decoration: underline;
 }
 
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem 4rem;
+  background:
+    linear-gradient(125deg, #050505 0%, #121212 26%, #2c2c2c 52%, #171717 74%, #050505 100%),
+    linear-gradient(210deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 38%),
+    linear-gradient(330deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 32%);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.14) 26%, rgba(0, 0, 0, 0.14) 74%, rgba(0, 0, 0, 0.96) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.18) 18%, rgba(0, 0, 0, 0.08) 50%, rgba(0, 0, 0, 0.18) 82%, rgba(0, 0, 0, 0.68) 100%);
+}
+
+.page-hero-inner {
+  position: relative;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: #FFEA00;
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3.8rem, 10vw, 7rem);
+  line-height: 1;
+  text-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.page-hero-text {
+  max-width: 42rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .who-am-i-textbox {
   display: flex;
   justify-content: space-between;
@@ -20,17 +73,7 @@ body {
   flex-direction: row;
   text-align: center;
   color: white;
-  padding: 10rem 0 0 2rem;
-}
-
-.who-am-i-intro h1 {
-  color: #FFEA00;
-  margin-bottom: 3rem;
-  margin-top: -6rem;
-  font-family: "Slackey", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 6rem;
+  padding: 4rem 0 0 2rem;
 }
 
 .who-am-i-intro {
@@ -86,7 +129,9 @@ body {
   text-align: center;
 }
 
-.education-title h2 {
+.education-title h2, 
+.who-am-i-intro h2 {
+  font-family: "Slackey", sans-serif;
   color: #FFEA00;
   font-size: 3rem;
 }
@@ -103,9 +148,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .who-am-i-intro h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  .page-hero {
+    min-height: 34rem;
+    height: auto;
+    padding: 5.5rem 1rem 2.5rem;
+  }
+
+  .page-hero-inner {
+    padding: 0 1.5rem;
+  }
+
+  .page-hero-text {
+    font-size: 1rem;
   }
 
   .who-am-i-img {
@@ -120,6 +174,10 @@ body {
 
   .who-am-i-intro {
     text-align: center;
+  }
+
+  .who-am-i-textbox {
+    padding: 3rem 0 0;
   }
 
   .education-title h2 {

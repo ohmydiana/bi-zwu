@@ -15,16 +15,20 @@
   width: 100%;
   padding: 0 1rem;
   position: relative;
-  height: 3rem;
+  height: 3.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 3rem;
   width: auto;
 }
 
 .desktop-search {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,13 +69,18 @@
   padding: 0;
 }
 
-.nav-list li a, 
+.nav-list li a,
 .nav-list li span {
   color: white;
   text-decoration: none;
   padding: 1rem;
   display: block;
   font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #7f7f7f;
 }
 
 .menu-icon {

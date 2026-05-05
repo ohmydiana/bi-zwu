@@ -1,32 +1,57 @@
 
-
 .nav-list .active {
   text-decoration: underline;
 }
 
-.hobbies-hero {
-  background-image: url(../pics/hobbies/hobbies-hero.JPEG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  min-height: 45em;
+.page-hero {
   position: relative;
   overflow: hidden;
-  height: 70vh;
-  background-color: black;
+  min-height: calc(100vh - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem 4rem;
+  background:
+    linear-gradient(125deg, #050505 0%, #121212 26%, #2c2c2c 52%, #171717 74%, #050505 100%),
+    linear-gradient(210deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 38%),
+    linear-gradient(330deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 32%);
 }
 
-.hobbies-hero-description {
-  text-align: center;
-  padding: 2rem;
-  max-width: 75rem;
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.14) 26%, rgba(0, 0, 0, 0.14) 74%, rgba(0, 0, 0, 0.96) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.18) 18%, rgba(0, 0, 0, 0.08) 50%, rgba(0, 0, 0, 0.18) 82%, rgba(0, 0, 0, 0.68) 100%);
+}
+
+.page-hero-inner {
+  position: relative;
+  max-width: 78rem;
   margin: 0 auto;
+  padding: 0 3rem;
+  text-align: center;
 }
 
-.hobbies-hero-description p {
-  font-size: 1.3rem;
-  color: #fff;
-  line-height: 2rem;
+.page-hero h1 {
+  color: #FFEA00;
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3.8rem, 10vw, 7rem);
+  line-height: 1;
+  text-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.page-hero-text {
+  max-width: 42rem;
+  margin: 1.5rem auto 0;
+  color: white;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
 }
 
 .hobbies-list {
@@ -102,14 +127,18 @@
 }
 
 @media (max-width: 768px) {
-
-  .hobbies-hero {
-    margin-top: -15rem;
+.page-hero {
+    min-height: 34rem;
+    padding: 5.5rem 1rem 2.5rem;
   }
 
-  .hobbies-hero-description p {
+  .page-hero-inner {
+    padding: 0 1.5rem;
+  }
+
+  .page-hero-text {
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.6;
   }
 
   .hobby-text p {

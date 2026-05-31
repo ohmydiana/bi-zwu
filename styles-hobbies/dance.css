@@ -78,7 +78,7 @@ body.lightbox-open {
   bottom: -2.5rem;
   transform: translateX(-50%);
   z-index: 2;
-  width: min(26vw, 28rem);
+  width: min(35vw, 40rem);
   height: auto;
   object-fit: contain;
   pointer-events: none;
@@ -264,13 +264,14 @@ body.lightbox-open {
 
   .dance-hero-title {
     width: 100%;
-    font-size: clamp(4.8rem, 38vw, 9rem);
-    letter-spacing: 0.1rem;
+    font-size: clamp(4rem, 28vw, 9rem);
+    letter-spacing: 0.3rem;
+    margin-top: 5rem;
   }
 
   .dance-hero-subject {
-    width: min(50vw, 15rem);
-    bottom: 3rem;
+    width: clamp(8rem, 55vw, 35rem);
+    bottom: -1rem;
   }
 
   .breadcrumb {

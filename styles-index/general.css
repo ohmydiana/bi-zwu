@@ -115,6 +115,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .above-fold {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer {
     align-items: center;
     text-align: center;

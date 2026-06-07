@@ -9,7 +9,7 @@ Také by se měla vyvarovat [typických nedostatků](https://courses.fit.cvut.cz
 
 Pro publikaci semestrální práce na webu použijte tento repozitář. Vše, co do
 něj uložíte, se publikuje na webovém serveru. Webová adresa semestrální práce
-je https://bi-zwu.pages.iga.ksi.fit.cvut.cz/b242/project/sichadia
+je https://bi-zwu.pages.iga.ksi.fit.cvut.cz/project
 
 > Pro interaktivní práci si stáhněte repozitář na svůj lokální počítač a
 > soubory upravujte na něm. Na konci své práce výsledek nahrajte zpět do
@@ -17,7 +17,11 @@ je https://bi-zwu.pages.iga.ksi.fit.cvut.cz/b242/project/sichadia
 >
 > Stažení:
 ```
-git clone https://bi-zwu.pages.iga.ksi.fit.cvut.cz/bi-zwu/b242/project/sichadia.git project
+git clone https://gl.iga.ksi.fit.cvut.cz/bi-zwu/project.git project
+```
+> nebo
+```
+git clone git@gl.iga.ksi.fit.cvut.cz:bi-zwu/project.git project
 ```
 > Nahrání zpět:
 ```

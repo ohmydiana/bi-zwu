@@ -178,6 +178,12 @@ body {
 
   .who-am-i-textbox {
     padding: 3rem 0 0;
+    justify-content: center;
+  }
+
+  .who-am-i-intro {
+    margin-right: 0;
+    flex: 1 1 100%;
   }
 
   .education-title h2 {

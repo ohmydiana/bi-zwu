@@ -360,8 +360,9 @@ body.lightbox-open {
   direction: ltr;
 }
 
-.trip-detail-section-text h1 {
+.trip-detail-section-text h2 {
   margin-bottom: 1.8rem;
+  font-size: 32px;
 }
 
 .trip-detail-section-text p {
@@ -409,15 +410,17 @@ body.lightbox-open {
     z-index: 10;
   }
 
-  .travel-hero-description,
-  .text p {
+  .travel-hero-description {
     font-size: 1rem;
     line-height: 1.5rem;
-    padding: 3rem 1rem 0 1rem;
+    padding: 0 1rem;
   }
 
   .text p {
-    margin-top: 8px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
   }
 
   .travel-hero {
@@ -439,6 +442,7 @@ body.lightbox-open {
 
   .text-boxes {
     padding: 1rem;
+    margin-top: -6rem;
   }
 
   .text-card {
